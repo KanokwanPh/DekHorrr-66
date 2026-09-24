@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DekHor-Candy.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="page5-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header class="main-header">
+        <div class="container nav-wrapper">
+             <a href="#" class="logo">DekHor</a>
+                <nav class="main-nav">
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                        <li><a href="Page2S.html">Planning</a></li>
+                        <li><a href="page3.html">Food</a></li>
+                        <li><a href="Page4.html">Life Skills</a></li> 
+                        <li><a href="#" class="active-link">Share Experiences</a></li>
+                        <li><a href="page6.html">About Us</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    
+
+    <main class="hero-section">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1>Share Experience</h1>
+                
+                <a href="#Menu1" class=" button-btn menu-toggle-btn " data-target="Menu1" ><h4>Explore</h4></a>
+            </div>
+            <div class="image-content">
+                <div class="food-image food-right img-fluid"></div>
+                
+            </div>
+        </div>
+    </main>
+
+    
+    <div class="menu-navbar">
+        <ul class="nav nav-pills card-header-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" 
+                        data-bs-target="#Menu1" type="button" role="tab" 
+                        aria-controls="tab1" aria-selected="true"><h4>ประสบการณ์ชีวิต</h4>
+                </button>
+            </li>
+            
+            <li class="nav-item">
+                <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" 
+                        data-bs-target="#Menu2" type="button" role="tab" 
+                        aria-controls="tab2" aria-selected="false"><h4>เคล็ดลับการประหยัด</h4>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" 
+                        data-bs-target="#Menu3" type="button" role="tab" 
+                        aria-controls="tab3" aria-selected="false"><h4>การเรียนและชีวิตในหอพัก</h4>
+                </button>
+            </li>
+        </ul>
+    </div>  
+
+    
+    <div class="bg">
+        <!-- menu-card1 -->
+    
+        <div class="menu tab-pane fade show active" id="Menu1" role="tabpanel" aria-labelledby="tab1-tab">
+            <h1>ประสบการณ์ชีวิต</h1>
+            <div class="menu_box ">
+                <div class="menu_card ">
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/a2/32/22/a232228b5e0e2b8a5af031b991b4a44a.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>การเริ่มต้นชีวิตใหม่</h2>
+                        <p>
+                           เรื่องราวของการออกจากบ้านไปเรียนต่อและการปรับตัวกับชีวิตใหม่ที่เต็มไปด้วยความท้าทายและสิ่งที่เรียนรู้
+                        </p>
+                        <div class="card-author">- โดย นักเรียนหอ</div>
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal">รายละเอียด</a>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/89/be/7d/89be7d35e7def440954e5f6faea49ede.jpg">
+                    </div>
+
+                    <div class="menu_info">
+                        <h2>ความสัมพันธ์ในหอพัก</h2>
+                        <p>
+                           วิธีการสร้างความเข้าใจและความสัมพันธ์ที่ดีกับเพื่อนหอ รวมถึงการแก้ไขข้อขัดแย้งต่างๆ
+                        </p>
+                        <div class="card-author">- โดย ผู้มีประสบการณ์</div>
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal2">รายละเอียด</a>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/87/ef/0c/87ef0c4403b335cd4026c37a088c88c5.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>การเติบโตและการเรียนรู้</h2>
+                        <p>
+                           บทเรียนชีวิตที่ได้รับจากการอยู่ห่างจากบ้าน และวิธีการพัฒนาตนเองให้เป็นคนที่ดีขึ้น
+                        </p>
+                        <div class="card-author">- โดย ผู้ที่มีประสบการณ์</div>
+
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal3">รายละเอียด</a>
+                    </div>
+                </div>
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/d5/3d/65/d53d65b2d9d2b823e8c6edc56a34b4c6.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>ความรู้สึกเหงาในช่วงแรก</h2>
+                        <p>
+                           บทเรียนชีวิตที่ได้รับจากการอยู่ห่างจากบ้าน 
+                        </p>
+                        <div class="card-author">- โดย ผู้ที่มีประสบการณ์</div>
+
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal25">รายละเอียด</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>   
+
+
+          <!-- menu-card2 -->
+    
+        <div class="menu tab-pane fade" id="Menu2" role="tabpanel" aria-labelledby="tab2-tab">
+            <h1>เคล็ดลับการประหยัด</h1>
+            <div class="menu_box ">
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/cf/fc/25/cffc2580c3cc499edd377e456d845ff9.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>ประหยัดค่าอาหาร</h2>
+                        <p>
+                           วิธีการทำอาหารเองด้วยค่าใช้จ่ายน้อย การซื้อวัตถุดิบอย่างฉลาด และเมนูอาหารราคาถูกที่อร่อย
+                        </p>
+                        <div class="card-author">- โดย เด็กหอผู้ประหยัด</div>
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal4">รายละเอียด</a>
+                         
+                    </div>
+                </div>
+
+                
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/736x/ac/96/93/ac96930e3bedf5b62540e13b0e06f6cd.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>ประหยัดค่าขนส่ง</h2>
+                        <p>
+                           เคล็ดลับการจ่ายค่าขนส่งให้น้อยที่สุด การใช้บัตรโดยสาร และการวางแผนการเดินทาง
+                        </p>
+                       <div class="card-author">- โดย นักเดินทาง</div>
+                       
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal5">รายละเอียด</a>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/0e/7a/68/0e7a68e4519fa586a681a87ff289e9d1.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>บริหารเงินอย่างฉลาด</h2>
+                        <p>
+                           วิธีการทำบัญชีรายรับรายจ่าย การวางแผนงบประมาณรายเดือน และการออมเงินอย่างมีประสิทธิภาพ
+                        </p>
+                        <div class="card-author">- โดย ผู้เชี่ยวชาญด้านการเงิน</div>
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal6">รายละเอียด</a>
+                    </div>
+                </div>
+               
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/26/bc/11/26bc11e705a83cf14194b3e16a45a1e8.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>เคล็ดลับการประหยัดเงิน</h2>
+                       <p>How to ประหยัด</p>
+                        <div class="card-author">- โดย เด็กหอ</div>
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal10">รายละเอียด</a>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>   
+
+
+
+
+
+
+
+        <!-- menu3 -->
+        <div class="menu tab-pane fade" id="Menu3" role="tabpanel" aria-labelledby="tab3-tab">
+            <h1>การเรียนและชีวิตในหอพัก</h1>
+            <div class="menu_box ">
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/7f/cc/a0/7fcca0fd36de5f23dac0ac43f497b599.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>เทคนิคการเรียนที่มีประสิทธิภาพ</h2>
+                        <p>
+                            วิธีการเรียนให้เข้าใจ การจัดการเวลาระหว่างการเรียนและการพักผ่อน และการเตรียมตัวสอบ
+                        </p>
+                        <div class="card-author">- โดย นักเรียนดีเด่น</div>
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal7">รายละเอียด</a>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+                    
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/48/fc/92/48fc926b9ef1356a48c059f58e4b809a.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>สมดุลระหว่างการเรียนและการพักผ่อน</h2>
+                        <p>
+                           วิธีการดูแลสุขภาพจิตใจ การออกกำลังกายในหอพัก และการสร้างความสุขในชีวิตประจำวัน
+                        </p>
+                        <div class="card-author">- โดย ผู้รักษาสุขภาพ</div>
+
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal8">รายละเอียด</a>
+                    </div>
+                </div>
+
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/736x/ad/c9/40/adc940fd09c5d2d1ad1f995a8ff8d957.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>การวางแผนอนาคต</h2>
+                        <p>
+                            การเตรียมตัวสำหรับสัมมนา การหาประสบการณ์ทำงาน และการวางแผนการจ้างงาน
+                        </p>
+                        <div class="card-author">- โดย ผู้บ่งชี้ทาง</div>
+
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal9">รายละเอียด</a>
+                    </div>
+                </div>
+
+                <div class="menu_card">
+
+                    <div class="menu_image">
+                        <img src="https://i.pinimg.com/1200x/12/cc/98/12cc9844d20181ce682510e6c9088cbc.jpg">
+                    </div>
+                    <div class="menu_info">
+                        <h2>ชีวิตร่วมกับเพื่อนร่วมห้อง</h2>
+                        <p>ฉันโชคดี (และบางครั้งก็โชคร้าย) ที่มีเพื่อนร่วมห้องที่นิสัยต่างกันสุดขั้ว การอยู่ร่วมกับคนอื่นภายใต้หลังคาเดียวกันสอนให้ฉันรู้จักคำว่า "การประนีประนอม" อย่างแท้จริง</p>
+                        <div class="card-author">- โดย ผู้บ่งชี้ทาง</div>
+
+                        <a href="#" class="menu_btn" data-bs-toggle="modal" data-bs-target="#myModal11">รายละเอียด</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>   
+    </div>
+
+
+
+        <div class="accordion" id="faqAccordion">
+            <!-- คำถามที่ 1 -->
+             <h2>คำถามที่พบบ่อย</h2>
+            <div class="accordion-item">
+                
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#collapse1">
+                        ทำอย่างไรไม่ให้เหงาเวลาที่อยู่ไกลบ้าน?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" 
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        คำตอบ: หาเพื่อนพูดคุย ทำกิจกรรมกลุ่ม หรือใช้วิดีโอคอลคุยกับครอบครัวบ่อย ๆ
+                    </div>
+                </div>
+            </div>
+
+            <!-- คำถามที่ 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#collapse2">
+                        จะประหยัดค่าอาหารยังไง?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" 
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        คำตอบ: ทำอาหารเอง เลือกเมนูง่าย ๆ ใช้วัตถุดิบราคาถูก ซื้อของเป็นแพ็กใหญ่เก็บได้หลายวัน
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#collapse3">
+                        ทำอย่างไรให้เรียนเข้าใจและไม่ตกหล่นเนื้อหา?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" 
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        คำตอบ: สรุปเนื้อหาหลังเรียน ทำแบบฝึกหัด ทบทวนก่อนสอบ และถามเพื่อนหรืออาจารย์เมื่อไม่เข้าใจ                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#collapse4">
+                        จะจัดการเวลาเรียน–พักผ่อนได้อย่างไร?
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" 
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        คำตอบ: ทำตารางเวลา แบ่งเวลาเรียน พักผ่อน และทำกิจกรรมส่วนตัว ใช้เทคนิค Pomodoro ช่วยโฟกัส
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#collapse5">
+                        ทำอย่างไรให้ห้องสะอาดและอยู่สบาย?
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" 
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        คำตอบ: จัดของให้เป็นระเบียบ ทำความสะอาดสัปดาห์ละครั้ง และใช้ที่เก็บของให้เหมาะสม 
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#collapse6">
+                        ทำอย่างไรให้ออมเงินได้แม้มีค่าใช้จ่ายเยอะ?
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" 
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        คำตอบ: แบ่งเงินออมก่อนใช้ ตั้งเป้าออมรายเดือน แยกบัญชีออม และลดค่าใช้จ่ายไม่จำเป็น                    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- modal -->
+        <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">เรื่องราว</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>เมื่อก้าวลงจากรถหน้าหอพักในวันแรก ฉันรู้ทันทีว่าชีวิตกำลังจะเปลี่ยนไป บ้านที่คุ้นเคยอยู่ไกลออกไปหลายร้อยกิโลเมตร และที่นี่…คือจุดเริ่มต้นของการเรียนต่อที่ฉันใฝ่ฝัน แต่ก็เต็มไปด้วยความไม่แน่นอน
+                                วันแรก ๆ เหงาและสับสนไปหมด ตั้งแต่การจัดห้องใหม่เอง ทำอาหารง่าย ๆ เป็นครั้งแรก ไปจนถึงการหาทางไปคณะโดยไม่หลง ทุกอย่างคือความท้าทาย แต่ละปัญหาเล็ก ๆ ที่ผ่านไป ทำให้ฉันเริ่มมองเห็นตัวเองเข้มแข็งขึ้นทีละนิด
+                                ฉันได้เรียนรู้ว่าการเริ่มต้นใหม่ไม่ใช่แค่การย้ายที่อยู่ แต่คือการเรียนรู้ที่จะดูแลตัวเอง กล้าขอความช่วยเหลือ และเปิดใจรับผู้คนใหม่ ๆ ความกลัวค่อย ๆ ถูกแทนที่ด้วยความมั่นใจ และความโดดเดี่ยวก็ถูกแทนที่ด้วยมิตรภาพ
+                                สุดท้ายแล้ว ฉันได้รู้ว่า “บ้านใหม่” ไม่ได้หมายถึงสถานที่ แต่คือช่วงเวลาที่เรากล้าก้าวไปข้างหน้าและเติบโตด้วยตัวเอง
+                            </h4>
+
+                        </div>
+
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+        
+        <!-- modal2 -->
+        <div class="modal fade" id="myModal2">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">เรื่องราว</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>วิธีสร้างความเข้าใจและความสัมพันธ์ที่ดีกับเพื่อนหอ
+                                <br>
+                                1.ทักทาย พูดคุยเรื่องทั่วไป และเปิดใจให้รู้จักกัน
+                                <br>
+                                2.เคารพพื้นที่และเวลา เช่น ไม่เสียงดังเกินไป รักษาความสะอาด
+                                <br>
+                                3.แบ่งปันของเล็ก ๆ น้อย ๆ หรือช่วยเหลือกันเมื่อจำเป็น
+                                <br>
+                                วิธีแก้ไขข้อขัดแย้ง
+                                <br>
+                                1.คุยกันด้วยน้ำเสียงสงบ และฟังมุมมองของอีกฝ่ายก่อน
+                                <br>
+                                2.อธิบายความรู้สึกของตัวเองโดยไม่กล่าวโทษ
+                                <br>
+                                3.หาข้อตกลงร่วมกัน เช่น กำหนดเวลาทำกิจกรรมบางอย่าง  
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+        </div>
+
+
+
+         
+        <!-- modal3 -->
+        <div class="modal fade" id="myModal3">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">เรื่องราว</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>บทเรียนชีวิตจากการอยู่ห่างบ้าน
+                                <br>
+                                1.เรียนรู้การพึ่งพาตัวเองในเรื่องกินอยู่ เวลา และเงิน
+                                <br>
+                                2.เห็นคุณค่าของบ้านและครอบครัวมากขึ้น
+                                <br>
+                                3.ค้นพบตัวตนใหม่จากประสบการณ์ที่ไม่เคยเจอ ฝึกความรับผิดชอบและวินัยด้วยตัวเอง
+                                <br>
+                                วิธีพัฒนาตนเองให้เป็นคนที่ดีขึ้น
+                                <br>
+                                4.ตั้งเป้าหมายเล็ก ๆ ที่ทำได้จริงและทำสม่ำเสมอ
+                                <br>
+                                5.เปิดใจรับคำแนะนำและคำวิจารณ์เพื่อพัฒนา
+                                <br>
+                                6.จัดสรรเวลาให้สมดุลทั้งเรียน พักผ่อน และทักษะเสริม   
+                            </h4>
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+        </div>
+
+
+        
+
+
+
+        <!-- modal4 -->
+        <div class="modal fade" id="myModal4">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">รายละเอียด</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>วิธีทำอาหารเองด้วยค่าใช้จ่ายน้อย<br>
+                                1.วางแผนเมนูรายสัปดาห์เพื่อลดการซื้อของเกินจำเป็น<br>
+                                2.ทำอาหารครั้งละเยอะ ๆ แล้วเก็บแช่แข็งไว้กินหลายมื้อ<br>
+                                3.ใช้เครื่องปรุงพื้นฐานที่ใช้ได้หลายเมนู เช่น น้ำปลา ซีอิ๊ว ซอสปรุงรส<br>
+                                การซื้อวัตถุดิบอย่างฉลาด<br>
+                                1.ซื้อวัตถุดิบตามฤดูกาล ราคาจะถูกและสดกว่า<br>
+                                2.เลือกผัก–เนื้อสัตว์แบบแพ็กใหญ่แล้วแบ่งเก็บเอง<br>
+                                3.เช็กราคาหลายร้าน หรือซื้อจากตลาดสดช่วงใกล้ปิดเพื่อลดราคา<br>
+                                เมนูราคาถูกแต่ยังอร่อย<br>
+                                1.ข้าวผัดไข่ + ผักที่มี<br>
+                                2.ผัดกะเพราไก่สับ<br>
+                                3.ไข่ตุ๋นหรือไข่ม้วน<br>
+                                4.ซุปผัก/แกงจืดเต้าหู้หมูสับ<br>
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+        </div>
+
+        <!-- modal5 -->
+        <div class="modal fade" id="myModal5">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">รายละเอียด</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>เคล็ดลับจ่ายค่าขนส่งให้น้อยที่สุด<br>
+                                1.เลือกเส้นทางที่ประหยัดที่สุด แม้จะช้ากว่านิดหน่อย<br>
+                                2.ใช้ขนส่งสาธารณะเป็นหลักแทนการเรียกรถส่วนตัว<br>
+                                3.เดินหรือปั่นจักรยานเมื่อระยะทางไม่ไกล<br>
+                                การใช้บัตรโดยสารให้คุ้มค่า<br>
+                                1.ซื้อบัตรรายเดือน/รายเที่ยว เมื่อเดินทางประจำทุกวัน<br>
+                                2.ตรวจสอบโปรโมชันหรือส่วนลดบัตรเติมเงินของระบบต่าง ๆ<br>
+                                3.แตะบัตรเข้า–ออกถูกต้องเพื่อลดค่าโดยสารเกินจำเป็น<br>
+                                การวางแผนการเดินทาง<br>
+                                1.เช็กตารางรถและสภาพจราจรล่วงหน้า ลดการวนรถหรือเปลี่ยนเส้นทางบ่อย<br>
+                                2.รวมธุระหลายอย่างในทริปเดียวเพื่อลดจำนวนการเดินทาง<br>
+                                3.เลือกเวลาเดินทางนอกชั่วโมงเร่งด่วนเพื่อลดค่าใช้จ่ายและประหยัดเวลา<br>                     
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+        </div>
+            
+            
+    
+
+        <!-- modal6 -->
+        <div class="modal fade" id="myModal6">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">รายละเอียด</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>วิธีทำบัญชีรายรับ–รายจ่าย<br>
+                                1.จดทุกรายการที่ใช้จ่ายและรายได้ทุกวัน<br>
+                                2.แยกประเภทค่าใช้จ่าย เช่น อาหาร เดินทาง บันเทิง<br>
+                                3.ทบทวนทุกสัปดาห์ว่ามีอะไรเกินงบหรือไม่จำเป็น<br>
+                                การวางแผนงบประมาณรายเดือน<br>
+                                1.กำหนดงบหลัก เช่น ค่าอาหาร ค่าหอ ค่าเดินทาง แบบชัดเจน<br>
+                                2.กันเงินสำรองอย่างน้อย 10–20% สำหรับเหตุฉุกเฉิน ๆ<br>
+                                3.ใช้กฎ “จำเป็นก่อน อยากได้ทีหลัง” เพื่อลดรายจ่ายฟุ่มเฟือย<br>
+                                การวางแผนการเดินทาง<br>
+                                1.ออมทันทีที่ได้เงินเข้ามา เช่น 10–30% ก่อนใช้จ่าย <br>
+                                2.แยกบัญชีออมออกจากบัญชีใช้ เพื่อไม่ให้เผลอใช้<br>
+                                3.ตั้งเป้าหมายออมสั้น–ยาว เช่น ค่าเทอม ทริป หรือเงินก้อน<br>
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+
+
+         <!-- modal7 -->
+        <div class="modal fade" id="myModal7">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">รายละเอียด</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>วิธีการเรียนให้เข้าใจ<br>
+                                1.อ่านเนื้อหาคร่าว ๆ ก่อนเข้าเรียนเพื่อเตรียมพื้นฐาน<br>
+                                2.สรุปด้วยภาษาของตัวเองหลังเรียนจบแต่ละบท<br>
+                                3.ฝึกทำแบบฝึกหัดหรือโจทย์จริงเพื่อเช็กความเข้าใจ<br>
+                                การจัดการเวลาระหว่างเรียน–พักผ่อน<br>
+                                1.ใช้ตารางรายสัปดาห์แบ่งเวลาเรียน พัก และทำกิจกรรมอื่น<br>
+                                2.ใช้เทคนิค Pomodoro (เรียน 25 นาที พัก 5 นาที)<br>
+                                3.อย่านอนดึกบ่อย เพราะสมองล้าและประสิทธิภาพลดลง<br>
+                                การเตรียมตัวสอบ<br>
+                                1.เริ่มอ่านล่วงหน้า แบ่งเนื้อหาเป็นช่วง ๆ ไม่อ่านรวดเดียว<br>
+                                2.ทำสรุปย่อหรือแผนผังความคิดเพื่อทบทวนเร็<br>
+                                3.ทำข้อสอบเก่า/แบบฝึกหัดจำลองเพื่อประเมินตัวเอง<br>
+                                4.นอนให้เพียงพอคืนก่อนสอบ สมองจะจำได้ดีกว่า<br>
+                               
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+
+         <!-- moda8-->
+        <div class="modal fade" id="myModal8">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">รายละเอียด</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>วิธีดูแลสุขภาพจิตใจ<br>
+                                1.พูดคุยกับเพื่อนหรือคนที่ไว้ใจเมื่อรู้สึกเครียด<br>
+                                2.จัดเวลาพักผ่อน ไม่กดดันตัวเองมากเกินไป<br>
+                                3.ฝึกสติ เช่น หายใจลึก ๆ หรือทำสมาธิสั้น ๆ วันละไม่กี่นาที<br>
+                                ลดการเปรียบเทียบตัวเองกับคนอื่น<br>
+                                การออกกำลังกายในหอพัก<br>
+                                1.ออกกำลังกายแบบไม่ใช้พื้นที่มาก เช่น สควอท แพลงก์ ซิทอัพ<br>
+                                2.ออกกำลังกายตามคลิปโยคะหรือ hiit ระยะสั้น<br>
+                                3.เดินขึ้นลงบันไดแทนลิฟต์เพื่อเพิ่มการเผาผลาญ<br>
+                                ยืดกล้ามเนื้อก่อนนอนเพื่อลดความเมื่อยล้า<br>
+                                การสร้างความสุขในชีวิตประจำวัน<br>
+                                1.ทำกิจกรรมเล็ก ๆ ที่ชอบ เช่น ฟังเพลง ดูหนัง ทำอาหาร<br>
+                                2.ตั้งเป้าหมายเล็ก ๆ รายวัน เพื่อให้รู้สึกสำเร็จ<br>
+                                3.จัดห้องให้สะอาดและน่าอยู่ เพิ่มบรรยากาศดี ๆ<br>                       
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+
+
+         <!-- moda9-->
+        <div class="modal fade" id="myModal9">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">รายละเอียด</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>การเตรียมตัวสำหรับสัมมนา<br>
+                                1.ศึกษาหัวข้อและวิทยากรก่อนเข้าร่วม<br>
+                                2.เตรียมคำถามหรือประเด็นสนทนาไว้ล่วงหน้า<br>
+                                3.จดโน้ตระหว่างสัมมนาเพื่อทบทวนภายหลัง<br>
+                                เชื่อมต่อกับผู้เข้าร่วมคนอื่นเพื่อขยายเครือข่าย<br>
+                                การหาประสบการณ์ทำงาน<br>
+                                1.เริ่มจากฝึกงานหรืองานพาร์ทไทม์ที่เกี่ยวข้องกับสายงาน<br>
+                                2.ทำโปรเจกต์ส่วนตัวหรือเข้าร่วมกิจกรรมที่เสริมทักษะ<br>
+                                3.อัปเดตเรซูเม่และพอร์ตโฟลิโออยู่เสมอ<br>
+                                4.ขอคำแนะนำจากรุ่นพี่หรือผู้มีประสบการณ์<br>
+                                การวางแผนการจ้างงาน<br>
+                                1.กำหนดเป้าหมายสายงานและตำแหน่งที่สนใจ<br>
+                                2.วางแผนพัฒนาทักษะให้ตรงตามความต้องการของตลาด<br>
+                                3.ศึกษาบริษัทและวัฒนธรรมองค์กรก่อนสมัคร<br>
+
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+        </div>
+
+         <!-- moda10-->
+        <div class="modal fade" id="myModal10">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">รายละเอียด</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>"ในฐานะเด็กหอคนหนึ่งที่เคยผ่านช่วงเงินขาดมือมาแล้ว ฉันอยากจะบอกว่าเคล็ดลับสำคัญที่สุดในการเอาตัวรอดทางการเงินก็คือ การผันตัวเป็นเชฟในหอให้ได้มากที่สุด นี่แหละค่ะ แทนที่จะสั่งอาหารหรือกินข้าวนอกบ้านทุกมื้อ ฉันจะทำเมนูง่ายๆ ที่ใช้อุปกรณ์น้อย เช่น ข้าวคลุกปลาป๋อง ไข่เจียว หรือมาม่าใส่ผักต้ม ซึ่งช่วยประหยัดค่าอาหารต่อวันได้เยอะมาก และฉันยังพยายามไปซื้อวัตถุดิบที่ตลาดสดในช่วงเย็นๆ เพราะแม่ค้ามักจะเริ่มลดราคาของที่ต้องรีบขาย ทำให้ฉันสามารถตุนของมาทำอาหารได้หลายวันในราคาที่คุ้มค่ากว่ามาก ส่วนเรื่องค่าใช้จ่ายฟุ่มเฟือยประจำวันอย่างกาแฟราคาแพง ฉันก็เลิกซื้อไปเลยค่ะ หันมาชงกาแฟสำเร็จรูปเองจากในหอ ประหยัดเงินส่วนนี้ไปได้เป็นพันต่อเดือนเลยนะ
+
+                       นอกเหนือจากเรื่องอาหารแล้ว การเดินทางก็เป็นอีกจุดที่ฉันประหยัดได้มาก ฉันจะเลือก เดิน หรือใช้จักรยานถ้าสถานที่นั้นอยู่ห่างจากหอไม่เกินหนึ่งหรือสองกิโลเมตร ถือเป็นการออกกำลังกายไปในตัวด้วย แต่ถ้าต้องเดินทางไกลจริงๆ ฉันจะพยายามนัดเพื่อนๆ ที่จะไปทางเดียวกันเพื่อ แชร์ค่ารถ กัน ทำให้ค่าเดินทางหารแล้วถูกลงเยอะเลย ส่วนเรื่องการบริหารเงินนั้น ฉันใช้วิธีที่ง่ายแต่ได้ผลคือ การตั้งงบประมาณรายวันแบบตายตัว และใช้แอปพลิเคชันของธนาคารแยกเงินออกเป็นกระเป๋าชัดเจน เช่น กระเป๋าสำหรับค่ากิน กระเป๋าสำหรับเงินเก็บฉุกเฉิน และที่สำคัญที่สุดคือ ฉันจะใช้เวลาทุกสัปดาห์นั่งดูรายการใช้จ่ายทั้งหมดของตัวเอง เพื่อทบทวนว่าเงินฉันไหลไปไหนบ้าง ถ้าเจอว่าสัปดาห์นี้ใช้เงินไปกับของไม่จำเป็นเยอะไป สัปดาห์หน้าฉันก็จะลดมันลงทันที การทำแบบนี้ทำให้ฉันสามารถควบคุมการเงินของตัวเองได้อยู่หมัด และมีเงินเก็บเพิ่มขึ้นจริงค่ะ"
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+        </div>
+
+        <!-- moda11-->
+        <div class="modal fade" id="myModal11">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">ขั้นตอน</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>การเคารพพื้นที่ส่วนตัวและเสียงรบกวน
+                                เพื่อนคนหนึ่งชอบฟังเพลงขณะอ่านหนังสือ อีกคนชอบตื่นแต่เช้ามืดเพื่อเตรียมตัว ส่วนฉันเป็นพวกที่อ่านหนังสือตอนกลางคืนและต้องการความเงียบสงบที่สุด
+                                คือ สื่อสารกันอย่างเปิดอกค่ะ เราตกลงกันว่าถ้าใครต้องอ่านหนังสือจริงจัง ให้ใช้หูฟังตัดเสียงรบกวน หรือย้ายไปอ่านที่ห้องสมุดส่วนกลางของหอพัก การกำหนดเวลาปิดไฟที่ชัดเจนก็ช่วยให้เราจัดการกับวงจรการนอนหลับที่ไม่ตรงกันได้ดีขึ้นมากค่ะ
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+        </div>
+
+        
+
+            <!-- modal25-->
+        <div class="modal fade" id="myModal25">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h3 class="recipe text-center">เรื่องราว</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                        </div>
+                        <div class="modal-body">
+                            <h4>
+                               ตอนแรกที่ย้ายมาอยู่หอใหม่ ๆ ฉันรู้สึกเหงามาก ไม่มีใครรู้จักเลย ยิ่งตอนกลางคืนที่ห้องเงียบ ๆ ความคิดถึงบ้านก็ยิ่งทำให้ใจห่อเหี่ยว 
+                               แต่พอเริ่มทำกิจกรรมกับเพื่อน ๆ ในหอ พูดคุยและช่วยเหลือกันบ้าง ความรู้สึกนั้นก็ค่อย ๆ หายไป แล้วก็รู้สึกว่าตัวเองแข็งแกร่งขึ้น เพราะเรียนรู้ที่จะพึ่งพาตัวเองมากขึ้น
+                            </h4>
+
+                        </div>
+                        <div class="modal-footer">  
+                            <button class="button btn" data-bs-dismiss="modal" >ปิด</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+        </div>
+
+        <!-- footer -->
+
+        <footer class="main-footer">
+        <div class="container footer-wrapper">
+            <div class="footer-col col-about">
+                <div class="logo footer-logo">เกี่ยวกับเรา</div>
+                <p> เว็บไซต์ DekHor เป็นแหล่งข้อมูลที่ครบครันสำหรับนักศึกษาที่เข้าอยู่หอพักครั้งแรก และคำแนะนำการใช้ชีวิตในหอพัก</p>
+                
+            </div>
+
+            <div class="footer-col col-links">
+                <h3>ติดตามเรา</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?stype=lo&flo=1&deoia=1&jlou=AfiCDcsmldm_uPu2U_OIRpetvtC00AKFu7j5s4ymX7mV17ALT87RqpoX0fDr2HabEOqWtWjGeXrFGMCjzXpcMPvGN8PGRbZf633vov9H9UpqcQ&smuh=24713&lh=Ac8H46CS3169xo2KSwk" target="_blank" class="social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col col-contact">
+                <h3>ติดต่อเรา</h3>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>2410/2 ถ.พหลโยธิน เขตจตุจักร กรุงเทพฯ</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>012-345-6789</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>support@site.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Mon - Fri 08:00 - 17:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 DekHor คู่มือเด็กหอ | Powered by Candy</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    font-family: "Itim", cursive;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", cursive; /* ใช้ font-family ที่นี่ */
+    font-style: normal;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* ป้องกันการเกิด Scrollbar แนวนอน */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Root Variables (สีหลักๆ) --- */
+:root {
+    --primary-color: #fa6782; 
+    --text-menu: #ffffff; 
+    --bg-page: #BFDDEE; 
+    --hover-bg: #FDEEEB; 
+    --text-color: #FFFFFF; 
+    --headline-color: #FFFFFF;
+     --footer-bg: #13244b; 
+    
+}
+/* --- Navigation Bar Layout --- */
+.main-header {
+    padding: 12px 0;
+    background-color: rgb(7, 59, 131); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+    border-radius: 3px;
+    position: fixed; 
+    top: 0;       /* ยึดติดกับขอบด้านบนของหน้าจอ */
+    width: 100%;  /* ทำให้ Navbar กว้างเต็มจอเสมอ */
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* --- Logo Style --- */
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(9, 8, 7, 0.8);
+    color: var(--primary-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* --- Menu Links Style --- */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 4px;
+}
+
+.main-nav ul li {
+    margin: 0;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-size: 17px; 
+    font-weight: 500;
+    color: var(--text-menu); 
+    padding: 8px 12px; 
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    display: block; 
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* Style สำหรับลิงก์ที่ถูกเลือกอยู่ (Home) */
+.main-nav ul li .active-link {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Hover Effect (กล่องสีอ่อน) */
+.main-nav ul li a:hover:not(.active-link) {
+    background-color: var(--hover-bg); 
+    color: var(--primary-color);
+}
+
+/* รูป1 */
+.hero1-background-section {
+    width: 100%; 
+    min-height: 600px; 
+    background-image: url('photo/gibi14.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    color: white; 
+    flex-direction: column;
+}
+.hero1-content-overlay {
+    position: relative;
+    z-index: 2;
+}
+.hero1-background-section h1 {
+    font-size: 90px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,1.5);
+}
+.hero1-background-section p {
+    font-size: 28px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+
+.intro2-section.blue-bg-light{
+    background-color: #98e5ff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0; 
+    padding: 40px 0;
+    width: 100%;
+}
+
+/* รูป3 */
+.hero3-background-section {
+    width: 100%; 
+    min-height: 600px; 
+    background-image: url('photo/gibi11.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    
+}
+/* --- Root Variables --- */
+:root {
+    --text-dark: #f4f4f4;
+    --text-darker: #0a0c60;
+    --text-darker1: #ffe09e;
+    --text-light: #615d5d;
+    --link-color: #007bff;
+    --border-light: #ddd;
+    --max-width: 1200px;
+}
+
+/* --- Team Section Layout --- */
+.team-section {
+    padding: 80px 0;
+    
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-header {
+    max-width: 800px; 
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--text-darker1);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(117, 58, 0, 0.5);
+}
+
+.summary-text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text-darkำพ);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(243, 232, 221, 0.5);
+    background-color: rgba(225, 225, 225, 0.5); 
+    
+    padding: 20px 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 700px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.action-links a {
+    display: block;
+    color: var(--text-darker);
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* --- Team Grid (Flexbox) --- */
+.team-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+}
+
+.team-member {
+    flex: 1; 
+    padding: 20px;
+}
+
+/* --- รูปภาพวงกลม --- */
+.member-photo {
+    width: 180px;
+    height: 180px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 0 auto 15px auto; /* จัดให้อยู่กึ่งกลาง */
+    border: 1px solid var(--border-light); /* ขอบบางๆ */
+    box-shadow: 0 0 0 4px rgb(255, 255, 255), 0 0 0 5px var(--border-light);
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ครอบคลุมพื้นที่วงกลม */
+    display: block;
+}
+
+/* --- ข้อมูลสมาชิก --- */
+.team-member h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-darker1);
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 1px rgba(9, 8, 7, 0.5);
+}
+
+/* //////////////////////////// */
+.team-member .title {
+    font-size: 22px;
+    color: var(--text-darker);
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px rgba(169, 169, 168, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    padding: 20px 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    max-width: 700px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.team-member .joined {
+    font-size: 15px;
+    color: var(--text-light);
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px rgba(250, 205, 159, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px 30px; 
+    border-radius: 8px; 
+    max-width: 700px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* --- Responsive Design (สำหรับหน้าจอเล็ก) --- */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column; /* เรียงสมาชิกซ้อนกันในแนวตั้ง */
+        gap: 50px;
+    }
+    .team-header {
+        text-align: center; /* จัดหัวข้อให้อยู่กึ่งกลางบนมือถือ */
+    }
+}
+
+/* รูป2 */
+
+.hero2-background-section {
+    width: 100%; 
+    min-height: 600px; 
+    background-image: url('photo/gibi15.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    
+}
+/* --- ROOT VARIABLES (สำหรับสีในฟอร์ม) --- */
+:root {
+    --form-border-color: #ddd;
+    --form-focus-color: #A3D8F5; 
+    --form-button-color: #5dbeeb; 
+    --text-dark: #333;
+    --text-light: #595959;
+}
+
+/* --- CONTACT SECTION LAYOUT --- */
+.contact-section {
+    overflow: visible;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 80vh; 
+}
+
+.contact-form-wrapper {
+    max-width: 800px; 
+    width: 90%;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 10px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    padding: 80px ; 
+    border-radius: 8px; 
+    margin: 40px auto; 
+    
+}
+/* --- HEADER TEXT --- */
+.form-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.form-subtitle {
+    font-size: 20px;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+/* --- FORM GROUP AND LABELS --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: 550;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+/* --- INPUT AND TEXTAREA FIELDS --- */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--form-border-color);
+    border-radius: 5px; /* ขอบมนของช่องกรอก */
+    font-size: 16px;
+    color: var(--text-dark);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* เงาด้านในเล็กน้อย */
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical; /* อนุญาตให้ปรับขนาดในแนวตั้งเท่านั้น */
+}
+
+/* Style เมื่อช่องกรอกถูก Focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--form-focus-color);
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(163, 216, 245, 0.5); /* เพิ่มเงาสีฟ้าอ่อน */
+}
+
+/* --- SUBMIT BUTTON --- */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--form-button-color);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-submit:hover {
+    background-color: #6a96ac;
+}
+
+.btn-submit .fa-paper-plane {
+    margin-right: 8px; /* ระยะห่างระหว่าง Icon กับข้อความ */
+}
+
+
+/*  FOOTER */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: white;
+    padding-top: 30px;  
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 10px;
+}
+
+.footer-logo {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.col-about p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.col-links ul {
+    list-style: none;
+    
+}
+
+.col-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    margin-top: 3px;
+    font-size: 16px;
+    
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #4D475B; /* เส้นแบ่งสีเข้มขึ้น */
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #f8e47b;
+}
+
+
+
+
+
+/* Form Styles */
+.form-group {
+margin-bottom: 1.5rem;
+}
+
+label {
+display: block;
+margin-bottom: 0.5rem;
+color: #333;
+font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+width: 100%;
+padding: 0.8rem;
+border: 2px solid #ffeef8;
+border-radius: 8px;
+font-size: 1rem;
+transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+outline: none;
+border-color: #ff6b9d;
+box-shadow: 0 0 10px rgba(255, 107, 157, 0.2);
+}
+
+textarea {
+resize: vertical;
+min-height: 120px;
+}
+
+.submit-btn {
+background: #DD2D4A;
+color: white;
+border: none;
+padding: 0.8rem 2rem;
+font-size: 1rem;
+border-radius: 25px;
+cursor: pointer;
+transition: all 0.3s ease;
+width: 100%;
+font-weight: 700;
+}
+
+.submit-btn:hover {
+transform: scale(1.02);
+box-shadow: 0 5px 20px rgba(255, 107, 157, 0.3);
+background-color: #fac031;
+}
+
+@media (max-width: 992px) {
+    .nav-wrapper {
+        justify-content: center;
+        gap: 8px;
+    }
+    .logo {
+        font-size: 28px;
+    }
+    .main-nav ul li a {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        padding: 8px 0;
+    }
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 6px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .main-nav ul {
+        justify-content: center;
+        gap: 2px 4px;
+    }
+    .main-nav ul li a {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+}

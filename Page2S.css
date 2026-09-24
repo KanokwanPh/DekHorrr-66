@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    font-family: "Itim", cursive;
+    font-style: normal;
+}
+
+:root {
+    --color-primary-blue: #a2d8f4;
+    --color-dorm-blue: #a2d8f4; 
+    --color-dorm-yellow: #FFD700; 
+    --color-text-dorm: #FFFFFF;
+    --font-primary: 'Playfair Display', serif;
+    --primary-color: #fa6782; /* แดง/ชมพูสำหรับ Home และปุ่ม */
+    --text-menu: #ffffff; /* สีเทาสำหรับลิงก์ทั่วไป */
+    --bg-page: #BFDDEE; /* สีพื้นหลังอ่อนๆ ของหน้าจอ */
+    --hover-bg: #FDEEEB; /* สีพื้นหลัง Hover */
+    --text-color: #FFFFFF; /* สีข้อความขาว */
+    --headline-color: #FFFFFF;
+    --footer-bg: #13244b;
+}
+
+
+.custom-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* -------------------------------------- */
+/* 1. Navbar Styles */
+/* -------------------------------------- */
+/* --- Navigation Bar Layout --- */
+.main-header {
+    padding: 12px 0;
+    background-color: rgb(7, 59, 131); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+    border-radius: 3px;
+    position: fixed; 
+    top: 0;       /* ยึดติดกับขอบด้านบนของหน้าจอ */
+    width: 100%;  /* ทำให้ Navbar กว้างเต็มจอเสมอ */
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* --- Logo Style --- */
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(9, 8, 7, 0.8);
+    color: var(--primary-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* --- Menu Links Style --- */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 4px;
+}
+
+.main-nav ul li {
+    margin: 0;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-size: 17px; 
+    font-weight: 500;
+    color: var(--text-menu); 
+    padding: 8px 12px; 
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    display: block; 
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* Style สำหรับลิงก์ที่ถูกเลือกอยู่ (Home) */
+.main-nav ul li .active-link {
+    color: var(--primary-color); /* สีชมพู/แดง */
+    font-weight: 600;
+}
+
+/* Hover Effect (กล่องสีอ่อน) */
+.main-nav ul li a:hover:not(.active-link) {
+    background-color: var(--hover-bg); /* สีชมพูอ่อน */
+    color: var(--primary-color);
+}
+
+
+
+#checklist h4 {
+    font-size: 2.5rem;
+    text-align: justify;
+    color:#0552ac;
+}
+
+#checklist1{
+    background-color: #c70202;
+}
+
+
+#checklist h5 {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+h4{
+    font-size: 1.0rem;
+    text-align: justify;
+  
+}
+
+#about  h2 { 
+    font-size: 2.5rem;
+    text-align: justify;
+    color:#0552ac;
+}
+
+/* -------------------------------------- */
+/* 1. Banner Styles (DORM LIFE, YOUR STYLE) */
+/* -------------------------------------- */
+.banner-section {
+    background-image: url('https://www.ghibli.jp/gallery/karigurashi007.jpg');
+    padding-top: 150px; 
+    padding-bottom: 250px;
+    min-height: 80vh;
+    overflow: hidden; 
+    position: relative;
+    
+}
+
+.banner-section h1 {
+    color: #FFD700; 
+    font-size: 5rem;
+}
+
+.banner-section p {
+    color:#fbfbfc ;
+    max-width: 500px;
+}
+
+.banner-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #0552AC;
+    border: 2px solid #001F54;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 30px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+    z-index: 10;
+}
+.banner-btn:hover {
+    background-color: #0552AC; 
+    color: #FFFFFF; 
+    border-color: #0552AC; 
+}
+
+.banner-btn:active {
+    background-color: #001F54; 
+    color: #FFFFFF;
+}
+
+@media (max-width: 900px) {
+    .banner-section .container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center !important;
+        
+    }
+    .banner-btn {
+        position: relative; 
+        top: 0;
+        right: auto;
+        transform: none;
+        order: 3; 
+        margin-top: 20; 
+        margin-bottom: 20px;
+        z-index: 100; 
+    }
+    
+    .banner-section h1, 
+    .banner-section p {
+        order: 1;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+ 
+/* -------------------------------------- */
+/* Media Query สำหรับ Responsive Design */
+/* -------------------------------------- */
+@media (max-width: 900px) {
+    .image-content {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 100%;
+        height: 350px; 
+        order: 1; 
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+    }
+
+    .item-image { 
+        width: 50%; 
+        max-width: 380px; 
+        height: auto; 
+    }
+}
+
+
+.item-image {
+    display: block;
+    width: 100%; 
+    height: auto;
+    object-fit: contain; 
+    position: relative; 
+}
+
+
+/* -------------------------------------- */
+/* 2. Cards Styles */
+/* -------------------------------------- */
+.card-custom {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.card-placeholder {
+    background-color: #f8f8f8;
+}
+
+.card-body h5 {
+    font-weight: bold;
+    font-family: var(--font-primary) ;
+}
+
+.card-cover-image {
+    height: 200px; 
+    width: 100%;
+    object-fit: cover; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-body {
+    padding: 15px;
+    background-color:#a2d8f4;
+    object-fit: cover; 
+    border: 2px solid #005a87;
+    border-radius: 30px;
+    
+}
+
+.card-body .card-text:last-of-type {
+    margin-bottom: 15px; 
+}
+
+.card-body button {
+    display: block;
+    text-align: center;
+    margin-top: auto !important;
+}
+
+#checklist {  
+    background-color:#ffffff;
+}
+
+
+
+
+/* -------------------------------------- */
+/* 3. About Section Styles (คล้ายภาพที่ 3) */
+/* -------------------------------------- */
+.about-row {
+    padding: 40px 0;
+     
+}
+
+.bg-red-pink {
+     background-image: url('https://www.ghibli.jp/gallery/majo004.jpg');
+     height: 600px; 
+     width: 100%; 
+     background-repeat: no-repeat; /* ป้องกันไม่ให้ภาพซ้ำ */
+     background-position: center center; /* จัดตำแหน่งภาพให้อยู่กึ่งกลาง */
+     background-size: cover;
+}
+.bg-yellow {
+     background-image: url('https://www.ghibli.jp/gallery/karigurashi009.jpg');
+     height: 600px; 
+     width: 100%; 
+     background-repeat: no-repeat; 
+     background-position: center center; /* จัดตำแหน่งภาพให้อยู่กึ่งกลาง */
+     background-size: cover;
+}
+
+
+@media (min-width: 992px) {
+    .bg-img-1, .bg-img-2 {
+        height: 300px; 
+        width: 300px; 
+        margin-left: auto; 
+        margin-right: auto;
+        border-radius: 50%;
+    }
+}
+
+
+/* -------------------------------------- */
+/* 4. Services Section Styles (คล้ายภาพที่ 4) */
+/* -------------------------------------- */
+.service-box {
+    background-color:#fb5372;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(241, 240, 240, 0.1);
+}
+
+.service-box h4 {
+    color:#13244b;
+    text-align: center;
+}
+
+.service-box p{
+    color:#FFD700;
+    text-align: center;
+}
+
+.text-red-pink {
+    color: var(--color-secondary-red) !important;
+}
+
+
+.service-box p {
+    color: #FFD700 !important;    
+    text-align: center;
+}
+
+#services h5 {
+    color:#0552ac;
+}
+
+
+#services p {
+    color: #0552ac; 
+     font-size: 1.2rem; 
+}
+.text-red-pink {
+    color: #FFFFFF !important; 
+}
+
+
+/*  FOOTER */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: white;
+    padding-top: 30px; 
+   
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 10px;
+}
+
+.footer-logo {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.col-about p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.col-links ul {
+    list-style: none;
+    
+}
+
+.col-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    margin-top: 3px;
+    font-size: 16px;
+    
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #4D475B; /* เส้นแบ่งสีเข้มขึ้น */
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #f8e47b;
+}
+
+@media (max-width: 992px) {
+    .nav-wrapper {
+        justify-content: center;
+        gap: 8px;
+    }
+    .logo {
+        font-size: 28px;
+    }
+    .main-nav ul li a {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        padding: 8px 0;
+    }
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 6px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .main-nav ul {
+        justify-content: center;
+        gap: 2px 4px;
+    }
+    .main-nav ul li a {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+}
+
+
+
